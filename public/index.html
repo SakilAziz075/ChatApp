@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>
+        ChatApplication
+    </title>
+</head>
+
+<body>
+    <h1>WebSocket Chat</h1>
+
+    <form id="form">
+        <b>User-ID </b> <input type="text" placeholder="User-ID" id="myName">
+        <button id="connectButton">connect</button><br>
+        <b>Message: </b> <input type="text" placeholder="Message" id="message"><br>
+        <b>Target Users </b> <input type="text" placeholder="comma-separated-ID" id="targets">
+        <button id="sendButton">Send Message</button>
+    </form>
+
+    <div id="messageArea"><b>MESSAGES:</b></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="chat.js"></script>
+
+</body>
+</html>
