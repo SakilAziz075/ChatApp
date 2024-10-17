@@ -67,5 +67,5 @@ io.on('connection', (socket) => {                   //setting up listener for ne
 
 
 http.listen(3000, () => {
-    console.log('server listenning on port')
+    console.log('server listenning on port 3000')
 });
