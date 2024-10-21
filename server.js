@@ -28,12 +28,16 @@ io.on('connection', (socket) => {                   //setting up listener for ne
 
         for (let i = 0; i < receivers.length; i++) {
 
-            let receiver= receivers[i]
+            let receiver = receivers[i]
             //storing the message in the database
             let query = 'INSERT INTO messages(sender, receiver, message) VALUES(?,?,?)';
 
             db.query(query, [sender, receiver, message], (err, result) => {
-                if (err) throw err;
+                if (err) {
+                    console.error(`Database Error: ${err.message}`);
+                    socket.emit('dbError', 'Failed to store message');
+                    return;
+                }
                 console.log(`message stored in DB for ${receiver}`);
             });
 
