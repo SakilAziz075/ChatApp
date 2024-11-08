@@ -1,0 +1,74 @@
+/* General Body and Layout Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form b {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 12px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3f4c9e;
+}
+
+/* Message Area Styling */
+#messageArea {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messageArea b {
+    font-size: 1.1rem;
+}
+
+/* Message Styling */
+.message {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #eef2ff;
+    border-radius: 4px;
+}
